@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../styles/global-style.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.svg" alt="shop logo">
+        </div>
+        <nav class="main">
+            <ul>
+                <li><a href="" id="home">Home</a><div id="home-border"></div></li>
+                <li><a href="">About</a><div class="slider" id="about"></div></li>
+                <li><a href="">Product</a><div class="slider" id="product"></div></li>
+                <li><a href="">Support</a><div class="slider" id="support"></div></li>
+            </ul>
+        </nav>
+        <nav class="right">
+            <ul>
+                <li><i class="fas fa-search fa-lg"></i></li>
+                <li><i class="fas fa-shopping-cart fa-lg"></i></li>
+                <li><i class="fas fa-bars fa-lg"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="photo-product">
+            <img src="../assets/fone1.png" alt="photography of headphone" id="photo">
+            <figcaption>
+                <div class="photo-selection" onclick="clickPhoto(1)"></div>
+                <div class="photo-selection" id="selected" onclick="clickPhoto(2)"></div>
+                <div class="photo-selection" onclick="clickPhoto(3)"></div>
+            </figcaption>
+        </div>
+        <div class="information-product">
+            <h1 class="name-product">
+                HYPER X ON-EAR
+            </h1>
+            <h4 id="description-product">
+                Wireless over-ear headphones
+            </h4>
+            <p id="red-paragraph">
+                <i class="fas fa-star" style="cursor: pointer;"></i>
+                <i class="fas fa-star" style="cursor: pointer;"></i>
+                <i class="fas fa-star" style="cursor: pointer;"></i>
+                <i class="fas fa-star" style="cursor: pointer;"></i>
+                <i class="far fa-star" style="cursor: pointer;"></i>
+                <span>4.2 (335)</span>
+            </p>
+            <p>
+                <h4>Driver unit</h4>
+                70 mm, dome type (CCAW Voice Col)
+            </p>
+            <p>
+                <h4>Frequency Response</h4>
+                4 Hz + 100.000 Hz
+            </p>
+            <div class="buy-product">
+                <h1>$89.99</h1>
+                <button id="buy-button">Add to cart</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-information">
+                <img src="../assets/graphic_eq_black_18dp.svg" style="width: 32px; height: auto;" class="icons">
+                <p> High-Resolution Audio compatible</p>
+            </div>
+            <div class="footer-information">
+                <i class="fab fa-bluetooth-b fa-lg icons"></i>
+                <p>Wireless connectivity using bluetooth</p>
+            </div>
+            <div class="footer-information">
+                <i class="fas fa-battery-empty fa-lg icons"></i>
+                <p>A powerful battery that lasts up to 4 hours of use</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
